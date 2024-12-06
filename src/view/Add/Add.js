@@ -15,7 +15,7 @@ function Add() {
   const addStudent = async()=>{
     try
     {
-    const response = await axios.post("https://school-7fpy.onrender.com/students",{
+    const response = await axios.post(`${process.env.REACT_APP_API_URL}/students`,{
       rollNo : rollNo,
       Name: Name,
       city:city

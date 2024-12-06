@@ -21,7 +21,7 @@ function Add() {
   const {rollNo} = useParams();
 
   const loadStudentDetail = async(rollNo)=>{
-    const response = await axios.get(`https://school-7fpy.onrender.com/students/${rollNo}`)
+    const response = await axios.get(`${process.env.REACT_APP_API_URL}/students/${rollNo}`)
     setStudent(response.data.data)
   };
 
@@ -32,7 +32,7 @@ function Add() {
   const updateStudent = async()=>{
     try
     {
-    const response = await axios.put(`https://school-7fpy.onrender.com/students/${rollNo}`,{
+    const response = await axios.put(`${process.env.REACT_APP_API_URL}/students/${rollNo}`,{
       Name: student.Name,
       city:student.city
       
