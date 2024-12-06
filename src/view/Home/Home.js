@@ -9,7 +9,7 @@ function App() {
   const [students , setStudents] =useState([]);
 
   const loadStudent = async ()=>{
-    const response = await axios.get("http://localhost:5002/students")  
+    const response = await axios.get("https://school-7fpy.onrender.com/students")  
     
   setStudents(response.data.data);
     

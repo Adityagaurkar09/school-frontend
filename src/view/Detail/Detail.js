@@ -11,7 +11,7 @@ function Detail() {
   const {rollNo} = useParams();
   
   const loadStudentDetail = async(rollNo)=>{
-    const response = await axios.get(`http://localhost:5002/students/${rollNo}`)
+    const response = await axios.get(`https://school-7fpy.onrender.com/students/${rollNo}`)
     setStudent(response.data.data)
 
   }
