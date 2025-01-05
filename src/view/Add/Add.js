@@ -18,7 +18,7 @@ function Add() {
     const response = await axios.post(`${process.env.REACT_APP_API_URL}/students`,{
       rollNo : rollNo,
       Name: Name,
-      city:city
+      city:city,
       
     })
 
