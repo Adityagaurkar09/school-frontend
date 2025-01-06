@@ -47,7 +47,7 @@ function Add() {
  
   return (
     <div className='student-form'>
-        <h1>update Student</h1>
+        <h1 className='student'>update Student</h1>
 
         <input type='text' 
         placeholder='RollNo' 
